@@ -49,6 +49,7 @@ Edit
 ```bash
 git clone https://github.com/your-username/flask-ci-cd-project.git
 cd flask-ci-cd-project
+```
 ## 2️⃣ Add Your Docker Hub Secrets in GitHub
 Go to your GitHub repo:
 
@@ -59,6 +60,8 @@ Add the following:
 DOCKER_USERNAME → your Docker Hub username
 
 DOCKER_PASSWORD → your Docker Hub password or access token
+```
+```
 
 ## 🐳 Run the App Locally Using Docker
 After the GitHub Action has pushed the image to Docker Hub:
