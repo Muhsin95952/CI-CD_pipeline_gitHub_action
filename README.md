@@ -7,13 +7,13 @@ This project demonstrates a basic CI/CD pipeline setup using **GitHub Actions** 
 ## 📁 Project Structure
 
 flask-ci-cd-project/
-├── app/
-│ └── app.py
-├── Dockerfile
-├── requirements.txt
-└── .github/
-└── workflows/
-└── ci-cd.yaml
+- ├── app/
+- │ └── app.py
+- ├── Dockerfile
+- ├── requirements.txt
+- └── .github/
+- └── workflows/
+- └── ci-cd.yaml
 
 yaml
 Copy
@@ -49,7 +49,7 @@ Edit
 ```bash
 git clone https://github.com/your-username/flask-ci-cd-project.git
 cd flask-ci-cd-project
-2️⃣ Add Your Docker Hub Secrets in GitHub
+## 2️⃣ Add Your Docker Hub Secrets in GitHub
 Go to your GitHub repo:
 
 Settings → Secrets and Variables → Actions → New Repository Secret
@@ -60,7 +60,7 @@ DOCKER_USERNAME → your Docker Hub username
 
 DOCKER_PASSWORD → your Docker Hub password or access token
 
-🐳 Run the App Locally Using Docker
+## 🐳 Run the App Locally Using Docker
 After the GitHub Action has pushed the image to Docker Hub:
 
 bash
@@ -70,24 +70,24 @@ docker pull yourdockerusername/flask-ci-cd:latest
 docker run -d -p 5000:5000 yourdockerusername/flask-ci-cd:latest
 Then visit: http://localhost:5000
 
-✅ Output
+## ✅ Output
 csharp
 Copy
 Edit
 Hello from Flask CI/CD pipeline!
-📌 What You Learn
+## 📌 What You Learn
 How to build and Dockerize a Flask app.
 
 How to set up a GitHub Actions pipeline.
 
 How to automate Docker image builds and pushes using CI/CD.
 
-📷 Screenshot
+## 📷 Screenshot
 
-📄 License
+## 📄 License
 This project is licensed under the MIT License - feel free to use and modify!
 
-💡 Next Step
+## 💡 Next Step
 Head over to Day 2: Dockerize a Node.js App and Push to Docker Hub →
 
 yaml
